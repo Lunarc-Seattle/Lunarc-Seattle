@@ -10,7 +10,7 @@
 
 I'm an Information Systems master's student at Northeastern's Silicon Valley campus, working across **UI development, LLM post-training and backend engineering**. I've been a TA for Advanced Techniques with Large Language Models, for 2 semesters, and in my research I'm adapting multimodal models to geospatial reasoning with **SFT, GRPO and Reinforcement Learning Reward Design**.
 
-Selected as 1/8 students university-wide for a fully funded exchange year in University of Floria, many of my landscape architecture projects happened here, from my capstone design in DeBary to a flood and coastline plan for St. Augustine. Doing the visualization and sea level analysis by hand took forever, so I **taught myself to code** to automate it. That's how I ended up with both a designer's eye and an engineer's habits. The St. Augustine pipeline below is that study rebuilt properly in code.
+Selected as 1/8 students university-wide for a fully funded exchange year in University of Florida, many of my landscape architecture projects happened here, from my capstone design in DeBary to a flood and coastline plan for St. Augustine. Doing the visualization and sea level analysis by hand took forever, so I **taught myself to code** to automate it. That's how I ended up with both a designer's eye and an engineer's habits. The St. Augustine pipeline below is that study rebuilt properly in code.
 
 Now I build Python pipelines and tools that run unattended, check their own results and **give the same output on every rerun**: automated runs with retries and resume, regression tests in CI, versioned data and results. I'm looking for SDE roles in simulation and data tooling, and LLM engineering roles.
 

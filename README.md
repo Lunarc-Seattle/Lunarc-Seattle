@@ -32,6 +32,14 @@ I'm looking for SDE and LLM engineering roles.
       <sub>JavaScript, UI design, illustration</sub>
     </td>
   </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <a href="https://github.com/Lunarc-Seattle/st-augustine-slr"><img src="https://raw.githubusercontent.com/Lunarc-Seattle/st-augustine-slr/main/docs/figures/fig0_cover.png" alt="St. Augustine at 1, 5 and 9 ft of sea-level rise" width="100%"></a>
+      <h4><a href="https://github.com/Lunarc-Seattle/st-augustine-slr">St. Augustine sea-level-rise pipeline</a> · <a href="https://lunarc-seattle.github.io/st-augustine-slr/">project page</a></h4>
+      <p>I rebuilt a sea-level-rise study from my landscape portfolio as a reproducible Python pipeline on NOAA, Census and OpenStreetMap data. For 1 to 9 ft of rise it measures how much city land floods, keeps ocean-connected and isolated low-lying areas apart, and lists the historic sites and parks in the way. One command reruns it, every run checks its own results and records SHA-256 hashes of all inputs and outputs, and an offline test suite runs in CI.</p>
+      <sub>Python, GeoPandas, GDAL, OSMnx, pytest, GitHub Actions</sub>
+    </td>
+  </tr>
 </table>
 
 ### More projects
@@ -39,8 +47,6 @@ I'm looking for SDE and LLM engineering roles.
 [CloudBite Engine](https://github.com/Lunarc-Seattle/CloudBite-Engine) is a food delivery backend on Spring Boot, MyBatis, MySQL and Redis, with JWT auth and WebSocket order alerts. It includes 18 bilingual engineering notes where I question and verify the course material instead of copying it.
 
 [Patient management microservices](https://github.com/Lunarc-Seattle/SpringBoot) is a patient management system split into five Spring Boot services that talk over gRPC and Kafka behind an API gateway, running locally on Docker and LocalStack.
-
-[St. Augustine sea level rise pipeline](LINK) rebuilds one of my landscape studies as a Python data pipeline.
 
 [MyLeetCode-Algo-Palace](https://github.com/Lunarc-Seattle/MyLeetCode-Algo-Palace) holds 130+ LeetCode solutions, synced from LeetCode automatically by a GitHub Actions workflow.
 

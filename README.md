@@ -8,20 +8,21 @@
   <img src="assets/banner-light.svg" alt="Jie (Fia) Yin. LLM evaluation and backend engineering." width="100%">
 </picture>
 
-I build Python pipelines and tools that run unattended, check their own results and give the same output on every rerun: automated runs with retries and resume, regression tests in CI, versioned data and results.
+I'm an Information Systems master's student at Northeastern's Silicon Valley campus, working across **UI development, LLM post-training and backend engineering**. I've been a TA for Advanced Techniques with Large Language Models, for 2 semesters, and in my research I'm adapting multimodal models to geospatial reasoning with **SFT, GRPO and Reinforcement Learning Reward Design**.
 
-I'm a master's student in Information Systems at Northeastern's Silicon Valley campus and a TA for INFO 7374, Advanced Techniques with Large Language Models. My first degree is in landscape architecture, so my projects deal with terrain, water and maps. Looking for SDE roles in simulation and data tooling, and LLM engineering roles.
+Selected as 1/8 students university-wide for a fully funded exchange year in University of Floria, many of my landscape architecture projects happened here, from my capstone design in DeBary to a flood and coastline plan for St. Augustine. Doing the visualization and sea level analysis by hand took forever, so I **taught myself to code** to automate it. That's how I ended up with both a designer's eye and an engineer's habits. The St. Augustine pipeline below is that study rebuilt properly in code.
+
+Now I build Python pipelines and tools that run unattended, check their own results and **give the same output on every rerun**: automated runs with retries and resume, regression tests in CI, versioned data and results. I'm looking for SDE roles in simulation and data tooling, and LLM engineering roles.
+
 
 ### Current LLM research
 
 **LLM failure mode discovery: flood reasoning from site maps**<br>
-Research with Prof. Lai at Northeastern, since January 2026
+Research with Prof. Lai at Northeastern
 
-* Found and validated a failure mode in multimodal LLMs reading site-analysis maps: they mark floodplain only where water is mapped (3/49 for DeepSeek, 0/49 for Gemini on dry floodplain cells, vs. 24/26 for a blind human baseline); built a leakage-safe 194-site dataset from FEMA, USGS and county GIS data.
-* Built a Python data pipeline over ArcGIS REST services (FEMA, USGS, county GIS) with tiled downloads, caching, retries and completeness checks that caught silent data loss; generated datasets for 148 sites in one overnight run.
-* Designed an atomic rubric and a single scalar RL reward with automated tests; calibration caught a reward hack (always-NO scored 0.97, above both models), fixed by centering the reward on balanced accuracy (now 0.58 vs. 1.06 for reference answers); SFT and GRPO on a small VLM in progress.
+Multimodal LLMs such as DeepSeek and Gemini miss almost every floodplain cell without mapped water (3/49 and 0/49), while a blind human gets 24 of 26. I built the 194-site dataset and the RL reward for this task, caught a reward hack along the way, and am now moving into post-training with SFT and GRPO on a small vision-language model.
 
-The repository is private on purpose. If the test sites and answer keys were public, future models could look them up or see them in training, and the benchmark would stop measuring anything. [Contact me](https://www.linkedin.com/in/jiefiayincodingirl/) for details or a walkthrough.
+The repo is private so future models can't find the answers. [Contact me](https://www.linkedin.com/in/jiefiayincodingirl/) for details.
 
 ### Projects
 

@@ -8,38 +8,45 @@
   <img src="assets/banner-light.svg" alt="Jie (Fia) Yin. LLM evaluation and backend engineering." width="100%">
 </picture>
 
-I'm a master's student in Information Systems at Northeastern University's Silicon Valley campus and a TA for INFO 7374, Advanced Techniques with Large Language Models. My first degree is in landscape architecture, and most of my LLM work grows out of it: I build eval tasks from real site analysis problems, find where models fail, and turn those failures into training data.
+I build Python pipelines and tools that run unattended, check their own results and give the same output on every rerun: automated runs with retries and resume, regression tests in CI, versioned data and results.
 
-My current research project, site-floodplain-eval, gives multimodal models the map layers a site designer works from (contours, soils, vegetation, water) and asks where water will pond or flood. Answers are scored against official flood zone maps. The code is private for now, and I'm happy to walk through it.
+I'm a master's student in Information Systems at Northeastern's Silicon Valley campus and a TA for INFO 7374, Advanced Techniques with Large Language Models. My first degree is in landscape architecture, so my projects deal with terrain, water and maps. Looking for SDE roles in simulation and data tooling, and LLM engineering roles.
 
-I'm looking for SDE and LLM engineering roles.
+### Current LLM research
 
-### Selected work
+**LLM failure mode discovery: flood reasoning from site maps**<br>
+Research with Prof. Lai at Northeastern, since January 2026
+
+* Found and validated a failure mode in multimodal LLMs reading site-analysis maps: they mark floodplain only where water is mapped (3/49 for DeepSeek, 0/49 for Gemini on dry floodplain cells, vs. 24/26 for a blind human baseline); built a leakage-safe 194-site dataset from FEMA, USGS and county GIS data.
+* Built a Python data pipeline over ArcGIS REST services (FEMA, USGS, county GIS) with tiled downloads, caching, retries and completeness checks that caught silent data loss; generated datasets for 148 sites in one overnight run.
+* Designed an atomic rubric and a single scalar RL reward with automated tests; calibration caught a reward hack (always-NO scored 0.97, above both models), fixed by centering the reward on balanced accuracy (now 0.58 vs. 1.06 for reference answers); SFT and GRPO on a small VLM in progress.
+
+The repository is private on purpose. If the test sites and answer keys were public, future models could look them up or see them in training, and the benchmark would stop measuring anything. [Contact me](https://www.linkedin.com/in/jiefiayincodingirl/) for details or a walkthrough.
+
+### Projects
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <a href="https://lunarc-seattle.github.io/breath-runner/"><img src="https://github.com/Lunarc-Seattle/breath-runner/raw/main/docs/media/breath-runner.gif" alt="Breath Runner gameplay: the runner jumps a gap on a long inhale and collects coins" width="100%"></a>
       <h4><a href="https://github.com/Lunarc-Seattle/breath-runner">Breath Runner</a></h4>
-      <p>A breathing rehab game for people recovering from lung surgery at home. Breathe into the microphone: inhale to jump, keep inhaling to glide. I designed the trainer device, the companion app and the illustrations, then built the game. Click the picture to play.</p>
+      <p>A breathing rehab game for people recovering from lung surgery at home: breathe into the microphone to jump and glide. I designed the trainer, the app and the illustrations, then built it in React and TypeScript, with unit and end-to-end tests gating every deploy. Two versions are playable: <a href="https://lunarc-seattle.github.io/breath-runner/v1/">v1</a>, the first release, and <a href="https://lunarc-seattle.github.io/breath-runner/v2/">v2</a>, with the redesigned app pages.</p>
       <sub>React, TypeScript, Playwright, illustration</sub>
     </td>
     <td width="50%" valign="top">
       <a href="https://lunarc-seattle.github.io/st-augustine-slr/"><img src="https://github.com/Lunarc-Seattle/st-augustine-slr/raw/main/docs/figures/fig0_cover.png" alt="St. Augustine at 1, 5 and 9 ft of sea level rise: 8.0%, 43.3% and 69.4% of city land newly inundated" width="100%"></a>
       <h4><a href="https://github.com/Lunarc-Seattle/st-augustine-slr">St. Augustine sea level rise</a></h4>
-      <p>How much of St. Augustine, Florida goes under water at 1 to 9 ft of sea level rise, and which historic sites and parks are in the way. A reproducible Python pipeline on NOAA, Census and OpenStreetMap data that checks its own results on every run. It rebuilds a study I first drew by hand for my landscape architecture portfolio.</p>
-      <sub>Python, GeoPandas, GIS, pytest</sub>
+      <p>How much of St. Augustine, Florida floods at 1 to 9 ft of sea level rise, rebuilt as a one-command Python pipeline on NOAA, Census and OpenStreetMap data. Reruns give byte-identical results, each run records SHA-256 hashes of every input and output and checks its own invariants, and CI tests it on Linux, macOS and Windows.</p>
+      <sub>Python, GeoPandas, pytest, GitHub Actions</sub>
     </td>
   </tr>
 </table>
 
-### More projects
+### Backend projects
 
 [CloudBite Engine](https://github.com/Lunarc-Seattle/CloudBite-Engine) is a food delivery backend on Spring Boot, MyBatis, MySQL and Redis, with JWT auth and WebSocket order alerts. It includes 18 bilingual engineering notes where I question and verify the course material instead of copying it.
 
 [Patient management microservices](https://github.com/Lunarc-Seattle/SpringBoot) is a patient management system split into five Spring Boot services that talk over gRPC and Kafka behind an API gateway, running locally on Docker and LocalStack.
-
-[MyLeetCode-Algo-Palace](https://github.com/Lunarc-Seattle/MyLeetCode-Algo-Palace) holds 130+ LeetCode solutions, synced from LeetCode automatically by a GitHub Actions workflow.
 
 ### Tools
 

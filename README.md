@@ -1,9 +1,6 @@
 <!--
-  This README expects these files in the same repository:
-    assets/banner-light.svg and assets/banner-dark.svg   the header
-    assets/floodplain.png      a figure from site-floodplain-eval
-    assets/breath-runner.png   a screenshot of the game
-  Replace LINK and EMAIL near the bottom before you publish.
+  Profile README for github.com/Lunarc-Seattle.
+  The banners live in assets/. Project pictures load straight from each project's own repo.
 -->
 
 <picture>
@@ -13,6 +10,8 @@
 
 I'm a master's student in Information Systems at Northeastern University's Silicon Valley campus and a TA for INFO 7374, Advanced Techniques with Large Language Models. My first degree is in landscape architecture, and most of my LLM work grows out of it: I build eval tasks from real site analysis problems, find where models fail, and turn those failures into training data.
 
+My current research project, site-floodplain-eval, gives multimodal models the map layers a site designer works from (contours, soils, vegetation, water) and asks where water will pond or flood. Answers are scored against official flood zone maps. The code is private for now, and I'm happy to walk through it.
+
 I'm looking for SDE and LLM engineering roles.
 
 ### Selected work
@@ -20,24 +19,16 @@ I'm looking for SDE and LLM engineering roles.
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Lunarc-Seattle/site-floodplain-eval"><img src="assets/floodplain.png" alt="Site analysis layers and the official flood zone map for one test site" width="100%"></a>
-      <h4><a href="https://github.com/Lunarc-Seattle/site-floodplain-eval">site-floodplain-eval</a></h4>
-      <p>Multimodal models get the map layers a site designer works from (contours, soils, vegetation, water) and have to say where water will pond or flood. Answers are scored against official flood zone maps.</p>
-      <sub>Python, multimodal LLMs, evaluation</sub>
+      <a href="https://lunarc-seattle.github.io/breath-runner/"><img src="https://github.com/Lunarc-Seattle/breath-runner/raw/main/docs/media/breath-runner.gif" alt="Breath Runner gameplay: the runner jumps a gap on a long inhale and collects coins" width="100%"></a>
+      <h4><a href="https://github.com/Lunarc-Seattle/breath-runner">Breath Runner</a></h4>
+      <p>A breathing rehab game for people recovering from lung surgery at home. Breathe into the microphone: inhale to jump, keep inhaling to glide. I designed the trainer device, the companion app and the illustrations, then built the game. Click the picture to play.</p>
+      <sub>React, TypeScript, Playwright, illustration</sub>
     </td>
     <td width="50%" valign="top">
-      <a href="https://lunarc-seattle.github.io/Breath-Runner"><img src="assets/breath-runner.png" alt="Breath Runner game screen" width="100%"></a>
-      <h4><a href="https://lunarc-seattle.github.io/Breath-Runner">Breath Runner</a></h4>
-      <p>A breathing game that runs in the browser, with a companion web app. I drew the illustrations, designed the UI and wrote the code. Click the picture to play.</p>
-      <sub>JavaScript, UI design, illustration</sub>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" valign="top">
-      <a href="https://github.com/Lunarc-Seattle/st-augustine-slr"><img src="https://raw.githubusercontent.com/Lunarc-Seattle/st-augustine-slr/main/docs/figures/fig0_cover.png" alt="St. Augustine at 1, 5 and 9 ft of sea-level rise" width="100%"></a>
-      <h4><a href="https://github.com/Lunarc-Seattle/st-augustine-slr">St. Augustine sea-level-rise pipeline</a> · <a href="https://lunarc-seattle.github.io/st-augustine-slr/">project page</a></h4>
-      <p>I rebuilt a sea-level-rise study from my landscape portfolio as a reproducible Python pipeline on NOAA, Census and OpenStreetMap data. For 1 to 9 ft of rise it measures how much city land floods, keeps ocean-connected and isolated low-lying areas apart, and lists the historic sites and parks in the way. One command reruns it, every run checks its own results and records SHA-256 hashes of all inputs and outputs, and an offline test suite runs in CI.</p>
-      <sub>Python, GeoPandas, GDAL, OSMnx, pytest, GitHub Actions</sub>
+      <a href="https://lunarc-seattle.github.io/st-augustine-slr/"><img src="https://github.com/Lunarc-Seattle/st-augustine-slr/raw/main/docs/figures/fig0_cover.png" alt="St. Augustine at 1, 5 and 9 ft of sea level rise: 8.0%, 43.3% and 69.4% of city land newly inundated" width="100%"></a>
+      <h4><a href="https://github.com/Lunarc-Seattle/st-augustine-slr">St. Augustine sea level rise</a></h4>
+      <p>How much of St. Augustine, Florida goes under water at 1 to 9 ft of sea level rise, and which historic sites and parks are in the way. A reproducible Python pipeline on NOAA, Census and OpenStreetMap data that checks its own results on every run. It rebuilds a study I first drew by hand for my landscape architecture portfolio.</p>
+      <sub>Python, GeoPandas, GIS, pytest</sub>
     </td>
   </tr>
 </table>
@@ -53,8 +44,8 @@ I'm looking for SDE and LLM engineering roles.
 ### Tools
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java,spring,py,mysql,postgres,redis,kafka,docker,js,githubactions&theme=dark">
-  <img src="https://skillicons.dev/icons?i=java,spring,py,mysql,postgres,redis,kafka,docker,js,githubactions&theme=light" alt="Java, Spring, Python, MySQL, PostgreSQL, Redis, Kafka, Docker, JavaScript, GitHub Actions" height="40">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java,spring,py,ts,react,mysql,postgres,redis,kafka,docker,githubactions&theme=dark">
+  <img src="https://skillicons.dev/icons?i=java,spring,py,ts,react,mysql,postgres,redis,kafka,docker,githubactions&theme=light" alt="Java, Spring, Python, TypeScript, React, MySQL, PostgreSQL, Redis, Kafka, Docker, GitHub Actions" height="40">
 </picture>
 
-Reach me on [LinkedIn](LINK) or at EMAIL.
+Reach me on [LinkedIn](https://www.linkedin.com/in/jiefiayincodingirl/).

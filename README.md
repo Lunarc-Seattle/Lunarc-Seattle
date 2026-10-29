@@ -20,7 +20,7 @@ Now I build Python pipelines and tools that run unattended, check their own resu
 **LLM failure mode discovery: flood reasoning from site maps**<br>
 Research with Prof. Lai at Northeastern
 
-Multimodal LLMs such as DeepSeek and Gemini miss almost every floodplain cell without mapped water (3/49 and 0/49), while a blind human gets 24 of 26. I built the 194-site dataset and the RL reward for this task, caught a reward hack along the way, and am now moving into post-training with SFT and GRPO on a small vision-language model.
+Multimodal LLMs such as DeepSeek and Gemini miss almost every floodplain cell without mapped water (3/49 and 0/49), while a blind human gets 24 of 26. I built the 194-site dataset and the RL reward for this task, caught a reward hack along the way, and am now using post-training with SFT and GRPO on a reinforcement learning vision-language model.
 
 The repo is private so future models can't find the answers. [Contact me](https://www.linkedin.com/in/jiefiayincodingirl/) for details.
 

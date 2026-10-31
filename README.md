@@ -36,8 +36,6 @@ The repo is private so future models can't find the answers. [Contact me](https:
     </td>
     <td width="50%" valign="top">
       <a href="https://lunarc-seattle.github.io/st-augustine-slr/"><img src="https://github.com/Lunarc-Seattle/st-augustine-slr/raw/main/docs/figures/st-augustine-rise.gif" alt="Animated 2.5D view up the St. Augustine bayfront as the sea rises from today to 9 ft; landmarks turn red as they flood" width="100%"></a>
-      <a href="https://github.com/Lunarc-Seattle/st-augustine-slr"><img src="https://github.com/Lunarc-Seattle/st-augustine-slr/raw/main/docs/figures/st-augustine-today-vs-7ft.png" alt="The old town today in grey beside the same streets at +7 ft in aqua; 61.8% of city land newly under water" width="100%"></a>
-      <a href="https://github.com/Lunarc-Seattle/st-augustine-slr"><img src="https://github.com/Lunarc-Seattle/st-augustine-slr/raw/main/docs/figures/st-augustine-poster.png" alt="Poster: 8%, 22%, 43%, 62% and 69% of city land newly under water at 1 to 9 ft, and the landmarks reached at +1 and +3 ft" width="100%"></a>
       <h4><a href="https://github.com/Lunarc-Seattle/st-augustine-slr">St. Augustine sea level rise</a></h4>
       <p>How much of St. Augustine, Florida floods at 1 to 9 ft of sea level rise, rebuilt as a one-command Python pipeline on NOAA, Census and OpenStreetMap data. Reruns give byte-identical results, each run records SHA-256 hashes of every input and output and checks its own invariants, and CI tests it on Linux, macOS and Windows.</p>
       <sub>Python, GeoPandas, pytest, GitHub Actions</sub>

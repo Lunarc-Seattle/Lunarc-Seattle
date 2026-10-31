@@ -29,7 +29,7 @@ The repo is private so future models can't find the answers. [Contact me](https:
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://lunarc-seattle.github.io/breath-runner/"><img src="https://github.com/Lunarc-Seattle/breath-runner/raw/main/docs/media/breath-runner.gif" alt="Breath Runner gameplay: the runner jumps a gap on a long inhale and collects coins" width="100%"></a>
+      <a href="https://lunarc-seattle.github.io/breath-runner/"><img src="https://github.com/Lunarc-Seattle/breath-runner/raw/main/docs/media/level1-glide.gif" alt="Breath Runner gameplay: on a long inhale the runner jumps the forest gap and glides through a line of coins" width="100%"></a>
       <h4><a href="https://github.com/Lunarc-Seattle/breath-runner">Breath Runner</a></h4>
       <p>A breathing rehab game for people recovering from lung surgery at home: breathe into the microphone to jump and glide. I designed the trainer, the app and the illustrations, then built it in React and TypeScript, with unit and end-to-end tests gating every deploy. Two versions are playable: <a href="https://lunarc-seattle.github.io/breath-runner/v1/">v1</a>, the first release, and <a href="https://lunarc-seattle.github.io/breath-runner/v2/">v2</a>, with the redesigned app pages.</p>
       <sub>React, TypeScript, Playwright, illustration</sub>
